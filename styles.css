@@ -1,0 +1,79 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Center content in the middle of the page */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for the logo */
+.logo {
+    max-width: 272px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Styles for the search bar */
+.search-bar {
+    width: 700px; /* Increased width for a larger search bar */
+    padding: 20px 24px;
+    border: 1px solid #dfe1e5;
+    font-size: 16px; /* Optional: Adjust font size if needed */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Ensures the search bar is full width on small screens */
+@media (max-width: 575.98px) {
+    .search-bar {
+        width: calc(100% - 48px); /* Account for padding */
+    }
+}
+
+/* Styles for the search buttons */
+.search-buttons-container button {
+    padding: 10px 24px;
+    font-size: 0.875rem;
+    margin: 2px;
+}
+
+/* On smaller screens, adjust button size and stack them vertically */
+@media (max-width: 575.98px) {
+    .search-buttons-container {
+        flex-direction: column;
+    }
+
+    .search-buttons-container button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* Adjust the search bar and buttons sizing for medium screens */
+@media (min-width: 576px) and (max-width: 768px) {
+    .search-bar {
+        width: 100%; /* Adjust the width on medium devices */
+    }
+
+    .search-buttons-container button {
+        padding: 10px 20px; /* Adjust padding */
+    }
+}
+
+/* Further adjustments for larger screens */
+@media (min-width: 769px) {
+    .search-bar {
+        width: 100%; /* Adjust the width on larger devices */
+        align-items: center;
+    }
+    
+}

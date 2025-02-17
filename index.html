@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #fff;
+            transform: scale(1.1);
+        }
+        .logo {
+            max-width: 300px;
+            margin-bottom: 25px;
+        }
+        .search-bar-container {
+            width: 100%;
+            max-width: 640px;
+            position: relative;
+        }
+        .search-bar {
+            width: 100%;
+            padding: 14px 50px;
+            font-size: 18px;
+            border: 1px solid #dfe1e5;
+            border-radius: 28px;
+            outline: none;
+            box-shadow: 0 2px 8px rgba(32, 33, 36, 0.28);
+        }
+        .search-bar:focus {
+            border-color: #4285f4;
+            box-shadow: 0 2px 8px rgba(32, 33, 36, 0.28);
+        }
+        .search-icon, .voice-icon, .lens-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+        .search-icon {
+            left: 15px;
+        }
+        .voice-icon {
+            right: 55px;
+        }
+        .lens-icon {
+            right: 15px;
+        }
+        .search-buttons-container {
+            margin-top: 25px;
+        }
+        .search-button {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            padding: 12px 24px;
+            font-size: 16px;
+            color: #5f6368;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .search-button:hover {
+            border: 1px solid #dadce0;
+        }
+    </style>
+</head>
+<body>
+    <img class="logo" src="images/logo.png" alt="Google Logo">
+    <div class="search-bar-container">
+        <img class="search-icon" src="images/search.png" alt="Search Icon">
+        <input type="text" id="search-bar" class="search-bar" placeholder="Manoj K Balla">
+        <img class="voice-icon" src="images/voice-icon.png" alt="Voice Search">
+        <img class="lens-icon" src="images/lens-icon.png" alt="Google Lens">
+    </div>
+    <div class="search-buttons-container">
+        <button class="search-button" onclick="location.href='search-results.html'">Google Search</button>
+        
+    </div>
+</body>
+</html>

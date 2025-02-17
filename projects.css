@@ -1,0 +1,211 @@
+body, html {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+.logo {
+    height: 48px; /* Adjust the size as per your logo */
+    width: auto; /* Keep the logo's aspect ratio */
+}
+
+.input-group {
+    position: relative;
+    align-self: left;
+    width: 100%;
+    max-width: 700px;
+}
+
+.input-group .form-control {
+    width: 100%; /* Full width */
+    align-self: left;
+}
+
+.input-group-append {
+    position: absolute;
+    right: 5px;
+    border: transparent;
+}
+
+.btn-outline-secondary {
+    border: transparent;
+    /* Other styles from Bootstrap */
+}
+
+.options-bar {
+    overflow-x: auto;
+}
+
+.option-link {
+    display: inline-block;
+    margin-right: 16px;
+    color: #5f6368;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.option-link.active {
+    color: #202124;
+    border-bottom: 3px solid #4285f4; /* Google's blue */
+}
+
+.results-section, .information-card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28); */
+
+}
+
+.information-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    margin-bottom: 20px;
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.information-card .profile-pic {
+    display: flex;
+    flex-direction: column;
+    width: 80%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.information-card h2 {
+    margin-bottom: 15px;
+    color: #202124;
+    font-size: 24px;
+}
+
+.information-card p {
+    font-size: 14px;
+    color: #5f6368;
+    margin-bottom: 20px;
+}
+
+.information-card ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.information-card li {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.information-card .contact-link {
+    display: inline-block;
+    color: #1a73e8;
+    text-decoration: none;
+    padding: 8px 0;
+}
+
+.information-card .contact-link:hover {
+    text-decoration: underline;
+}
+
+.main-container {
+    padding-left: 0; /* Removes padding from the left */
+    margin-left: 0; /* 11rem Removes margin from the left */
+    max-width:fit-content;
+}
+/* ... existing styles ... */
+
+.results-section .list-group-item {
+    border: none; /* Remove the default border */
+    border-radius: 0; /* No border radius for a flat design */
+    padding: .75rem 1.25rem; /* Standard padding around the content */
+    max-width: 90;
+}   
+
+/* Remove the default list group link styling */
+.results-section .list-group-item .result-title, .results-section .list-group-item .result-url {
+    color: #1a0dab; /* Google link blue */
+    text-decoration: underline; /* No underline by default */
+}
+
+.results-section .list-group-item .result-title:hover, .results-section .list-group-item .result-url:hover {
+    text-decoration: underline; /* Underline on hover, like Google */
+}
+
+.results-section .list-group-item .result-title {
+    font-size: 1.25rem; /* Google's result title size */
+    color: #1a0dab; /* Google link blue */
+    text-decoration: none; /* No underline */
+    margin-bottom: 4px; /* Tighten up the spacing to match Google */
+}
+
+.results-section .list-group-item .result-snippet {
+    font-size: .875rem; /* Google's result snippet size */
+    color: #4d5156; /* Dark grey for regular text */
+    line-height: 1.4; /* Google's line height for readability */
+}
+
+.results-section .list-group-item .result-url {
+    font-size: .875rem; /* Smaller font size for the URL */
+    color: #1a0dab; /* Slightly darker grey than the snippet text */
+}
+
+/* Add styles for the hover state of the title */
+.results-section .list-group-item .result-title:hover {
+    text-decoration: underline; /* Underline on hover for the title, like Google */
+}
+
+/* ... existing styles ... */
+/* People Also Ask Section */
+#peopleAlsoAsk .card {
+    border: none; /* Remove default card border */
+}
+
+
+#peopleAlsoAsk .card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+    padding-left: 20px; /*Aligns text a bit off the edge*/
+}
+
+#peopleAlsoAsk .btn-link {
+    color: #202124;
+    text-align: left;
+    width: 100%;
+    text-decoration: none;
+    padding: 0; /* Removes default padding */
+    font-size: 1rem;
+}
+
+#peopleAlsoAsk .btn-link:hover,
+#peopleAlsoAsk .btn-link:focus {
+    text-decoration: none; /* Ensures the text doesn't underline on hover/focus */
+}
+
+#peopleAlsoAsk .collapse.show .card-body,
+#peopleAlsoAsk .collapsing .card-body {
+    border-top: 1px solid #e0e0e0; /* Adds a line above the expanded content */
+    background-color: #ffffff;
+}
+  
+/* ... other responsive adjustments ... */
+
+@media (max-width: 768px) {
+    .logo {
+        height: 32px; /* Smaller logo for smaller screens */
+    }
+    .input-group .form-control, .input-group-append .btn {
+        font-size: 14px; /* Smaller font size for better fit */
+    }
+
+    .main-container {
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
